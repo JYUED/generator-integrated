@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+
+// CLI
+program
+  .version(require('../package').version )
+  .usage('[options] <keywords>') 
+  // .option('-p, --port [port]', 'set port') 
+  // .option('-m, --mockPort [mockPort]', 'set listen mock port') 
+  // .option('-s, --interfaceSuffix [interfaceSuffix]', 'set interfaceSuffix') 
+  .parse(process.argv);
+
+
+// start parse process.argv
+if(!program.args.length){
+  program.help();
+}else{
+  var command = program.args;
+  if(['init'].indexOf(command[0]) > -1){
+    require('command-' + command[0])(program);
+  }else{
+    console.log('commond not exist');
+  }
+}
+

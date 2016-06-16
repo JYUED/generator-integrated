@@ -1,0 +1,27 @@
+{
+  "name": "promo1",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JYUED/generator-integrated.git"
+  },
+  "author": "huihui",
+  "license": "ISC",
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/JYUED/generator-integrated/issues"
+  },
+  "homepage": "https://github.com/JYUED/generator-integrated#readme",
+  "bin": {
+    "promo1": "./bin/promo1"
+  },
+  "devDependencies": {
+    "commander": "^2.9.0",
+    "directory-copy": "^0.1.0"
+  }
+}
