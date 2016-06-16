@@ -18,7 +18,7 @@ if(!program.args.length){
 }else{
   var command = program.args;
   if(['init'].indexOf(command[0]) > -1){
-    require('command-' + command[0])(program);
+    require('promo1-' + command[0])(program);
   }else{
     console.log('commond not exist');
   }
