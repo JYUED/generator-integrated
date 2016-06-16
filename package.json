@@ -12,7 +12,6 @@
   },
   "author": "huihui",
   "license": "ISC",
-  "dependencies": {},
   "bugs": {
     "url": "https://github.com/JYUED/generator-integrated/issues"
   },
@@ -20,7 +19,7 @@
   "bin": {
     "promo1": "./bin/promo1"
   },
-  "devDependencies": {
+  "dependencies": {
     "commander": "^2.9.0",
     "directory-copy": "^0.1.0"
   }
